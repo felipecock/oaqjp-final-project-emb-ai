@@ -36,6 +36,14 @@ def emotion_detector_app():
     # Call the emotion_detector function from the EmotionDetection package
     result = emotion_detector(text_to_analyze)
 
+    # Check if there was an error in the response
+    if "error_code" in result:
+        return f"Error: {result['error_message']}"
+    
+    # Check if the response is empty
+    if result["dominant_emotion"] is None:
+        return "Invalid text! Please try again!."
+
     # Format the result as a string
     response = (
         f"For the given statement, the system response is "

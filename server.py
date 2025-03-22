@@ -31,7 +31,7 @@ def emotion_detector_app():
     """
 
     # Retrieve the text to analyze from the request arguments
-    text_to_analyze = request.args.get("text")
+    text_to_analyze = request.args.get("textToAnalyze")
 
     # Call the emotion_detector function from the EmotionDetection package
     result = emotion_detector(text_to_analyze)

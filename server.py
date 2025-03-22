@@ -39,7 +39,7 @@ def emotion_detector_app():
     # Check if there was an error in the response
     if "error_code" in result:
         return f"Error: {result['error_message']}"
-    
+
     # Check if the response is empty
     if result["dominant_emotion"] is None:
         return "Invalid text! Please try again!."

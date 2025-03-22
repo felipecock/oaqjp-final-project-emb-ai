@@ -9,12 +9,12 @@ from EmotionDetection.emotion_detection import emotion_detector
 
 class TestEmotionDetector(unittest.TestCase):
     """
-    This class contains the unit tests for the emotion_detector function."
+    This class contains the unit tests for the emotion_detector function.
     """
 
     def test_emotion_detector(self):
         """
-        This function tests the emotion_detector function from EmotionDetection package."
+        This function tests the emotion_detector function from EmotionDetection package.
         """
 
         # Test case for joy emotion:
